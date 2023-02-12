@@ -89,6 +89,29 @@ public class Job {
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
 
-    // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
-    //  and id.
+//updating value
+    @Override
+    public String toString() {
+        String emptyString = "";
+        if (name.equals("")) {
+            name = "Data is not available";
+        }
+        if (employer.getValue().equals("") || employer.getValue() == null) {
+            employer.setValue("Data is not available");
+        }
+        if (location.getValue().equals("") || location.getValue() == null) {
+            location.setValue("Data is not available");
+        }
+        if (positionType.getValue().equals("") || positionType.getValue() == null) {
+            positionType.setValue("Data is not available");{
+        }
+        if (coreCompetency.getValue().equals("") || coreCompetency.getValue() == null){
+            coreCompetency.setValue("Data is not available");
+    }
+        }
+        emptyString = String.format("\nID: %d\n" +  "Name: %s\n" + "Employer: %s\n" + "Location: %s\n" + "Position type: %s\n" + "Core Competency: %s\n", id, name, employer, location, positionType, coreCompetency);
+
+        return emptyString;
+
+    }
 }
