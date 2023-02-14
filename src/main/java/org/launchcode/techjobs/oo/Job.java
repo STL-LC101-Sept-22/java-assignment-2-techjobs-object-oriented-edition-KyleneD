@@ -94,22 +94,22 @@ public class Job {
     public String toString() {
         String emptyString = "";
         if (name.equals("")) {
-            name = "Data is not available";
+            name = "Data not available";
         }
         if (employer.getValue().equals("") || employer.getValue() == null) {
-            employer.setValue("Data is not available");
+            employer.setValue("Data not available");
         }
         if (location.getValue().equals("") || location.getValue() == null) {
-            location.setValue("Data is not available");
+            location.setValue("Data not available");
         }
         if (positionType.getValue().equals("") || positionType.getValue() == null) {
-            positionType.setValue("Data is not available");{
+            positionType.setValue("Data not available");{
         }
         if (coreCompetency.getValue().equals("") || coreCompetency.getValue() == null){
-            coreCompetency.setValue("Data is not available");
+            coreCompetency.setValue("Data not available");
     }
         }
-        emptyString = String.format("\nID: %d\n" +  "Name: %s\n" + "Employer: %s\n" + "Location: %s\n" + "Position type: %s\n" + "Core Competency: %s\n", id, name, employer, location, positionType, coreCompetency);
+        emptyString = String.format("\nID: %d\n" +  "Name: %s\n" + "Employer: %s\n" + "Location: %s\n" + "Position Type: %s\n" + "Core Competency: %s\n", id, name, employer, location, positionType, coreCompetency);
 
         return emptyString;
 
